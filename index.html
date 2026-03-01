@@ -31,11 +31,10 @@
             border-radius: 50%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             margin: 0 auto 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
+            display: block;
+            object-fit: cover;
             box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+            border: 3px solid rgba(255, 255, 255, 0.2);
         }
         
         h1 {
@@ -72,7 +71,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        .link*hover {
+        .link:hover {
             background: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -87,17 +86,18 @@
 </head>
 <body>
     <div class="container">
-        <div class="avatar">👋</div>
+        <img src="avatar.jpg" alt="倪致远的头像" class="avatar">
         <h1>你好，我是倪致远</h1>
-        <p class="bio">欢迎来到我的个人主页！<br>这里会陆续添加更多内容...</p>
+        <p class="bio">欢迎来到我的个人主页！<br>这是 Future 为我制作的网站 🚀</p>
         
         <div class="links">
-            <a href="#" class="link">📝 博客</a>
-            <a href="#" class="link">💻 项目</a>
+            <a href="#" class="link">📝 博客项目</a>
+            <a href="#" class="link">💻 我的作品</a>
             <a href="#" class="link">📮 联系我</a>
         </div>
+        
         <div class="footer">
-            © 2026 倪致远 · Built with ❤️
+            © 2026 倪致远 · Built with ❤️ by Future
         </div>
     </div>
 </body>
